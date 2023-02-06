@@ -52,7 +52,7 @@ steps:
         plugins:
           artifacts#v1.5.0:
             download: "features/fixtures/ios/output/ipa_url.txt"
-            upload: "maze_output/failed/**/*"
+            upload: "maze_output/**/*"
           docker-compose#v4.8.0:
             pull: cocoa-maze-runner
             run: cocoa-maze-runner
@@ -76,7 +76,7 @@ steps:
         plugins:
           artifacts#v1.5.0:
             download: "features/fixtures/ios/output/ipa_url.txt"
-            upload: "maze_output/failed/**/*"
+            upload: "maze_output/**/*"
           docker-compose#v4.8.0:
             pull: cocoa-maze-runner
             run: cocoa-maze-runner
@@ -100,7 +100,7 @@ steps:
         plugins:
           artifacts#v1.5.0:
             download: "features/fixtures/ios/output/ipa_url.txt"
-            upload: "maze_output/failed/**/*"
+            upload: "maze_output/**/*"
           docker-compose#v4.8.0:
             pull: cocoa-maze-runner-legacy
             run: cocoa-maze-runner-legacy
@@ -124,7 +124,7 @@ steps:
         plugins:
           artifacts#v1.5.0:
             download: "features/fixtures/ios/output/ipa_url.txt"
-            upload: "maze_output/failed/**/*"
+            upload: "maze_output/**/*"
           docker-compose#v4.8.0:
             pull: cocoa-maze-runner-legacy
             run: cocoa-maze-runner-legacy
@@ -148,7 +148,7 @@ steps:
         plugins:
           artifacts#v1.5.0:
             download: "features/fixtures/ios/output/ipa_url.txt"
-            upload: "maze_output/failed/**/*"
+            upload: "maze_output/**/*"
           docker-compose#v4.8.0:
             pull: cocoa-maze-runner-legacy
             run: cocoa-maze-runner-legacy
@@ -172,7 +172,7 @@ steps:
         plugins:
           artifacts#v1.5.0:
             download: "features/fixtures/ios/output/ipa_url.txt"
-            upload: "maze_output/failed/**/*"
+            upload: "maze_output/**/*"
           docker-compose#v4.8.0:
             pull: cocoa-maze-runner-legacy
             run: cocoa-maze-runner-legacy

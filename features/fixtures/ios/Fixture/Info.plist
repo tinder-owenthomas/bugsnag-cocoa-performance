@@ -29,7 +29,7 @@
 	<key>bugsnag</key>
 	<dict>
 		<key>apiKey</key>
-		<string>0123456789abcdef0123456789abcdef</string>
+		<string>00000000000000000000000000000006</string>
 	</dict>
 </dict>
 </plist>

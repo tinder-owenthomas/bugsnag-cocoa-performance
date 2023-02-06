@@ -17,7 +17,7 @@
 
 - (void)setUp {
     NSError *error = nil;
-    auto config = [[BugsnagPerformanceConfiguration alloc] initWithApiKey:@"0123456789abcdef0123456789abcdef" error:&error];
+    auto config = [[BugsnagPerformanceConfiguration alloc] initWithApiKey:@"00000000000000000000000000000003" error:&error];
     XCTAssertNil(error);
     XCTAssertTrue([BugsnagPerformance startWithConfiguration:config error:&error]);
     XCTAssertNil(error);

@@ -11,7 +11,7 @@ class ConfigurationTests: XCTestCase {
     }
 
     func testValidateValidAPIKey() throws {
-        let config = try! BugsnagPerformanceConfiguration(apiKey: "0123456789abcdef0123456789abcdef")
-        XCTAssertEqual(config.apiKey, "0123456789abcdef0123456789abcdef")
+        let config = try! BugsnagPerformanceConfiguration(apiKey: "00000000000000000000000000000005")
+        XCTAssertEqual(config.apiKey, "00000000000000000000000000000005")
     }
 }

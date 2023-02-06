@@ -27,7 +27,7 @@
     XCTAssertNil(config);
 
     // Valid looking API key
-    config = [[BugsnagPerformanceConfiguration alloc] initWithApiKey:@"0123456789abcdef0123456789abcdef" error:&error];
+    config = [[BugsnagPerformanceConfiguration alloc] initWithApiKey:@"00000000000000000000000000000002" error:&error];
     XCTAssertNil(error);
     XCTAssertNotNil(config);
 

@@ -22,7 +22,7 @@ using namespace bugsnag;
 
 - (void)setUp {
     NSError *error = nil;
-    self.config = [[BugsnagPerformanceConfiguration alloc] initWithApiKey:@"0123456789abcdef0123456789abcdef" error:&error];
+    self.config = [[BugsnagPerformanceConfiguration alloc] initWithApiKey:@"00000000000000000000000000000004" error:&error];
     XCTAssertNil(error);
     XCTAssertNotNil(self.config);
 }

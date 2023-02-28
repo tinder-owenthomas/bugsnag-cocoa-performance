@@ -307,7 +307,7 @@ BugsnagPerformanceSpan *BugsnagPerformanceImpl::startSpan(NSString *name) {
 }
 
 BugsnagPerformanceSpan *BugsnagPerformanceImpl::startSpan(NSString *name, BugsnagPerformanceSpanOptions *optionsIn) {
-    auto options = SpanOptions(optionsIn);
+    auto options = SpanOptionsForCustom(optionsIn);
     auto span = [[BugsnagPerformanceSpan alloc] initWithSpan:tracer_.startSpan(name, options)];
     possiblyMakeSpanCurrent(span, options);
     return span;
@@ -322,7 +322,7 @@ BugsnagPerformanceSpan *BugsnagPerformanceImpl::startViewLoadSpan(NSString *name
 }
 
 BugsnagPerformanceSpan *BugsnagPerformanceImpl::startViewLoadSpan(NSString *name, BugsnagPerformanceViewType viewType, BugsnagPerformanceSpanOptions *optionsIn) {
-    auto options = SpanOptions(optionsIn);
+    auto options = SpanOptionsForViewLoad(optionsIn);
     auto span = [[BugsnagPerformanceSpan alloc] initWithSpan:
                  tracer_.startViewLoadSpan(viewType, name, options)];
     possiblyMakeSpanCurrent(span, options);
@@ -330,7 +330,7 @@ BugsnagPerformanceSpan *BugsnagPerformanceImpl::startViewLoadSpan(NSString *name
 }
 
 void BugsnagPerformanceImpl::startViewLoadSpan(UIViewController *controller, BugsnagPerformanceSpanOptions *optionsIn) {
-    auto options = SpanOptions(optionsIn);
+    auto options = SpanOptionsForViewLoad(optionsIn);
     auto span = [[BugsnagPerformanceSpan alloc] initWithSpan:
             tracer_.startViewLoadSpan(BugsnagPerformanceViewTypeUIKit,
                                       [NSString stringWithUTF8String:object_getClassName(controller)],
